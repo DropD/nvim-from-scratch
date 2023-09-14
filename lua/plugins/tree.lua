@@ -1,15 +1,15 @@
 return {
   "nvim-tree/nvim-tree.lua",
 
-  config = {
+  opts = {
     hijack_directories = { enable = false },
     renderer = {
       icons = {
         show = {
-          file = false,
-          folder = false,
-          folder_arrow = false,
-          git = false,
+          file = true,
+          folder = true,
+          folder_arrow = true,
+          git = true,
         },
       }
     },

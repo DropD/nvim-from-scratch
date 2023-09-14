@@ -8,7 +8,7 @@ if not vim.loop.fs_stat(lazypath) then
     "--filter=blob:none",
     "--single-branch",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",
+    "--branch=main",
     lazypath,
   })
 end
@@ -28,3 +28,5 @@ require("lazy").setup("plugins", {
     colorscheme = { "tokyonight-night" },
   },
 })
+
+vim.cmd([[colorscheme gruvbox]])

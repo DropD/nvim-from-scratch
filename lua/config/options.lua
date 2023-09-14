@@ -2,13 +2,14 @@
 -- Options
 ------------------------------------------------------------
 
-local indent = 2
+local indent = 4
 
 -- Interface
 vim.opt.cursorline = true
 vim.opt.fillchars = { vert = "│" }
 vim.opt.laststatus = 3
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.scrolloff = 8
 vim.opt.shortmess:append("c")
 vim.opt.showmode = false
@@ -17,6 +18,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.termguicolors = true
+vim.opt.background = "dark"
 
 -- Indentation
 vim.opt.expandtab = true

@@ -5,7 +5,7 @@ M.dependencies = {
   "williamboman/mason.nvim",
   {
     "williamboman/mason-lspconfig.nvim",
-    config = { automatic_installation = true, }
+    opts = { automatic_installation = true, }
   },
 }
 
@@ -13,12 +13,6 @@ function M.config()
   local servers = {
     bashls = {},
     elixirls = {},
-    sumneko_lua = {
-      Lua = {
-        telemetry = { enable = false },
-        workspace = { checkThirdParty = false },
-      },
-    },
   }
 
   require("neodev").setup({})

@@ -1,7 +1,7 @@
 return {
   "nvim-lualine/lualine.nvim",
 
-  config = {
+  opts = {
     options = {
       icons_enabled = true,
       component_separators = "│",

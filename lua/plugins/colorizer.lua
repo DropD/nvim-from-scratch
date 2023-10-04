@@ -1,7 +1,7 @@
 return {
   "NvChad/nvim-colorizer.lua",
 
-  config = {
+  opts = {
     user_default_options = {
       names = false,
     },

@@ -2,7 +2,7 @@
 -- Options
 ------------------------------------------------------------
 
-local indent = 2
+local indent = 4
 
 -- Interface
 vim.opt.cursorline = true
@@ -18,6 +18,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.termguicolors = true
+vim.opt.background = "dark"
+vim.opt.guifont = { "JetBrainsMono Nerd Font Propo:h15" }
 
 -- Indentation
 vim.opt.expandtab = true

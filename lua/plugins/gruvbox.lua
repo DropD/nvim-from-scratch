@@ -1,8 +1,8 @@
-local M = { "ellisonleao/gruvbox.nvim" }
+local M = {"ellisonleao/gruvbox.nvim"}
 
 function M.config()
-  vim.opt.background = "dark"
-  vim.cmd.colorscheme("gruvbox")
+  require("gruvbox").setup({
+  })
 end
 
 return M

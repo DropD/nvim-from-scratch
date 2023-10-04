@@ -5,7 +5,7 @@ M.dependencies = {
   "williamboman/mason.nvim",
   {
     "williamboman/mason-lspconfig.nvim",
-    config = { automatic_installation = true, }
+    opts = { automatic_installation = true, }
   },
 }
 

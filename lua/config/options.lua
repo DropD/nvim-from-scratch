@@ -19,6 +19,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
+vim.opt.guifont = { "JetBrainsMono Nerd Font Propo:h15" }
 
 -- Indentation
 vim.opt.expandtab = true

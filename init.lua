@@ -25,6 +25,6 @@ require("config.options")
 require("lazy").setup("plugins", {
   change_detection = { notify = false },
   install = {
-    colorscheme = { "tokyonight-night" },
+    colorscheme = { "gruvbox" },
   },
 })

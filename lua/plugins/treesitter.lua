@@ -26,7 +26,14 @@ function M.config()
       "sql",
       "toml",
       "yaml",
+      "python",
+      "haskell",
+      "cpp",
+      "rust"
     },
+    sync_install = false,
+    ignore_install = {},
+    auto_install = true,
     highlight = { enable = true },
     indent = { enable = true },
   })

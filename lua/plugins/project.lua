@@ -11,8 +11,6 @@ local M = {
 }
 
 function M.config()
-  require("project_nvim").setup {}
-  require("telescope").load_extension("projects")
   require("project_nvim").setup({
     patterns = {
       ".git",
@@ -23,8 +21,8 @@ function M.config()
       "package.json",
       "pyproject.toml"
     },
-    scope_chdir = "tab",
   })
+  require("telescope").load_extension("projects")
 end
 
 return M

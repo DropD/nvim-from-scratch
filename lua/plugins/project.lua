@@ -6,7 +6,17 @@ local M = {
   },
 
   keys = {
-    { "<Leader>P", "<Cmd>Telescope projects<CR>", desc = "Projects" },
+    {
+      "<Leader>P",
+      function()
+        local project = require("project_nvim")
+        project.get_recent_projects()
+        os.execute("sleep 0.2")
+        project.get_recent_projects()
+        require("telescope").extensions.projects.projects()
+      end,
+      desc = "Projects"
+    },
   },
 }
 

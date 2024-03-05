@@ -5,5 +5,11 @@ return {
     "nvim-lua/plenary.nvim",
   },
 
+  opts = {
+    search = {
+      pattern = [[\b(KEYWORDS)\b(.*):]],
+    },
+  },
+
   config = true
 }

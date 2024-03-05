@@ -19,6 +19,17 @@ function M.config()
     --     workspace = { checkThirdParty = false },
     --   },
     -- },
+    pylsp = {},
+    ruff_lsp = {
+      init_options = {
+        settings = {
+          args = {
+            "--config",
+            "$HOME/.config/ruff/ruff.toml"
+          }
+        }
+      }
+    }
   }
 
   require("neodev").setup({})

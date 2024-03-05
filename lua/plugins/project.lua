@@ -29,7 +29,10 @@ function M.config()
       ".svn",
       "Makefile",
       "package.json",
-      "pyproject.toml"
+      "pyproject.toml",
+      "package.yaml",
+      "stack.yaml",
+      "*.cabal",
     },
   })
   require("telescope").load_extension("projects")

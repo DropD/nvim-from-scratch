@@ -12,10 +12,15 @@ function M.pairs()
   require("mini.pairs").setup({})
 end
 
+function M.ai()
+  require("mini.ai").setup({})
+end
+
 function M.config()
   M.align()
   M.comment()
   M.pairs()
+  M.ai()
 end
 
 return M

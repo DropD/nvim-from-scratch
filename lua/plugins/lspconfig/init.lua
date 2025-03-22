@@ -19,6 +19,17 @@ function M.config()
     --     workspace = { checkThirdParty = false },
     --   },
     -- },
+    pylsp = {
+      configurationSources = {"ruff"},
+      plugins = {
+        ruff = {
+          enabled = true,
+          formatEnabled = true,
+          config = "/Users/ricoh/.config/ruff/ruff.toml",
+          extendSelect = { "I" },
+        }
+      }
+    }
   }
 
   require("neodev").setup({})

@@ -6,8 +6,11 @@ return {
   },
 
   opts = {
+    highlight = {
+      pattern = [[.*<(KEYWORDS)|(TODO\(.*\)).*:|]]
+    },
     search = {
-      pattern = [[\b(KEYWORDS)\b(.*):]],
+      pattern = [[\b(KEYWORDS)|(TODO\(.*\)).*:]],
     },
   },
 

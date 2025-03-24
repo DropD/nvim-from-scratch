@@ -22,7 +22,10 @@ local M = {
 
 function M.config()
   require("project_nvim").setup({
+    scope_chdir = "tab",
+    detection_methods = {"pattern", "lsp"},
     patterns = {
+      "!^model",
       ".git",
       "_darcs",
       ".hg", ".bzr",

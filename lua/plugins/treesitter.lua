@@ -15,7 +15,6 @@ function M.config()
       "elixir",
       "gitignore",
       "heex",
-      "help",
       "html",
       "javascript",
       "json",

@@ -11,6 +11,20 @@ return {
     "nvim-lua/plenary.nvim",
   },
 
+  config = function()
+    local telescope = require("telescope")
+    local actions = require("telescope.actions")
+    telescope.setup({
+      defaults = {
+        mappings = {
+          i = {
+            ["<C-S>"] = actions.send_selected_to_qflist + actions.open_qflist
+          }
+        }
+      }
+    })
+  end,
+
   keys = {
     { "<Leader>/",       find("current_buffer_fuzzy_find"),     desc = "Search" },
     { "<Leader><Space>", find("buffers"),                       desc = "Buffers" },

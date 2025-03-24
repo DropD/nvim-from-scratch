@@ -27,6 +27,7 @@ function M.config()
   end)
 
   ls.add_snippets("elixir", require("plugins.luasnip.elixir"))
+  ls.add_snippets("all", require("plugins.luasnip.all"))
 end
 
 return M

@@ -22,14 +22,20 @@ local M = {
 
 function M.config()
   require("project_nvim").setup({
+    scope_chdir = "tab",
+    detection_methods = {"pattern", "lsp"},
     patterns = {
+      "!^model",
       ".git",
       "_darcs",
       ".hg", ".bzr",
       ".svn",
       "Makefile",
       "package.json",
-      "pyproject.toml"
+      "pyproject.toml",
+      "package.yaml",
+      "stack.yaml",
+      "*.cabal",
     },
   })
   require("telescope").load_extension("projects")

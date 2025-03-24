@@ -4,15 +4,13 @@ function M.config()
   require("which-key")
 
   local mappings = {
-    ["<Leader>"] = {
-      ["?"] = { "<Cmd>WhichKey<CR>", "Keys" },
-      e = { name = "explore" },
-      f = { name = "find" },
-      F = { name = "Font" },
-    },
+    { "<Leader>?", "<Cmd>WhichKey<CR>", desc = "Keys" },
+    { "<Leader>F", group = "Font" },
+    { "<Leader>e", group = "explore" },
+    { "<Leader>f", group = "find" },
   }
 
-  require("which-key").register(mappings)
+  require("which-key").add(mappings)
 end
 
 return M
